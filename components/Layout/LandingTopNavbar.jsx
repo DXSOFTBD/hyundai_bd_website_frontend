@@ -68,7 +68,7 @@ const LandingTopNavbar = () => {
               <div className="pl-4 ">
                 <Link href="/">
                   {/* <Image className="w-full h-[60px]" src={logo} alt="Logo" /> */}
-                  logo
+                  logos
                 </Link>
               </div>
               <div className="text-3xl">
