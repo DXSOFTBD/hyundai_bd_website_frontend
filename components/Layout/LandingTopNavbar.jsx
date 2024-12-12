@@ -59,7 +59,7 @@ const LandingTopNavbar = () => {
     <>
       <nav
         className={`sticky md:fixed top-0 z-10 w-full ${
-          isScrolled ? "shadow-lg bg-[#4978BF]" : "bg-[#4978BF]"
+          isScrolled ? "shadow-lg bg-[#32498F]" : "bg-[#32498F]"
         }`}
       >
         <div className="container mx-auto">
@@ -82,7 +82,7 @@ const LandingTopNavbar = () => {
                 className="flex items-center justify-between
                lg:gap-20 xl:gap-40"
               >
-                <div className="h-[100px] w-[120px] flex items-center">
+                <div className="h-[100px] w-[120px] flex items-center text-white">
                   <Link href="/">
                     {/* <Image className="" src={logo} alt="Logo" /> */}
                     Logo
