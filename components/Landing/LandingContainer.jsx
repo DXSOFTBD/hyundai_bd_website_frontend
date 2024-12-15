@@ -1,4 +1,5 @@
 import HeroBanner from "./Sections/HeroBanner"
+import Products from "./Sections/Products"
 import Services from "./Sections/Services"
 
 const LandingContainer = () => {
@@ -6,6 +7,7 @@ const LandingContainer = () => {
         <div>
             <HeroBanner />
             <Services />
+            <Products />
         </div>
     )
 }
