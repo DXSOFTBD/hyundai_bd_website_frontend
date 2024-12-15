@@ -58,9 +58,8 @@ const LandingTopNavbar = () => {
   return (
     <>
       <nav
-        className={`sticky md:fixed top-0 z-10 w-full ${
-          isScrolled ? "shadow-lg bg-[#32498F]" : "bg-[#32498F]"
-        }`}
+        className={`sticky md:fixed top-0 z-10 w-full ${isScrolled ? "shadow-lg bg-[#32498F]" : "bg-[#32498F]"
+          }`}
       >
         <div className="container mx-auto">
           <div>
@@ -100,13 +99,23 @@ const LandingTopNavbar = () => {
                   >
                     <NevagationLink url="/" text="Home" />
                   </li> */}
-                      {/* <li
+                    {/* <li
                       className="text-[16px] font-medium text-white px-8 py-4 rounded-full cursor-pointer bg-[#606060] border-t-2 border-[#FEBE00]"
                       onMouseEnter={() => setIsDetailsVisible(true)}
                       onMouseLeave={() => setIsDetailsVisible(false)}
                     >
                       Products
                     </li> */}
+
+                    <li
+                      className={
+                        router.asPath === "/"
+                          ? "text-[16px] font-medium text-red-600"
+                          : "text-[16px] font-medium text-white px-8 py-4"
+                      }
+                    >
+                      <NevagationLink url="/home" text="Home" />
+                    </li>
 
                     <li
                       className={
@@ -126,7 +135,7 @@ const LandingTopNavbar = () => {
                     >
                       <NevagationLink url="/about" text="About Us" />
                     </li>
-                    <li
+                    {/* <li
                       className={
                         router.asPath === "/iccheghuri"
                           ? "text-[16px] font-medium text-red-600"
@@ -137,25 +146,17 @@ const LandingTopNavbar = () => {
                         url="/iccheghuri"
                         text="Iccheghuri"
                       />
-                    </li>
+                    </li> */}
+
                     <li
                       className={
-                        router.asPath === "/our-presence"
-                          ? "text-[16px] font-medium text-red-600"
-                          : "text-[16px] font-medium text-white px-8 py-4"
-                      }
-                    >
-                      <NevagationLink url="/our-presence" text="Our Presence" />
-                    </li>
-                    <li
-                      className={
-                        router.asPath === "/our-brand"
+                        router.asPath === "/contact"
                           ? "text-[16px] font-medium text-red-600"
                           : "text-[16px] font-medium text-white px-8 py-4"
 
                       }
                     >
-                      <NevagationLink url="/our-brand" text="Our Brand" />
+                      <NevagationLink url="/contact" text="Contact Us" />
                     </li>
                   </ul>
                 </div>
