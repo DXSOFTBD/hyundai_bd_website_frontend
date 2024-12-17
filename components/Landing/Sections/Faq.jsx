@@ -22,7 +22,7 @@ const Faq = () => {
                     </div>
                     <div className="space-y-4">
                         <h2 className="text-white text-4xl font-bold">Do you have questions?</h2>
-                        <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
+                        <Accordion className="rounded-md py-2 bg-[#234982] border-b-2 border-b-white">
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon className="text-white"/>}
                                 aria-controls="panel1-content"
@@ -39,7 +39,7 @@ const Faq = () => {
                                 your business growth.
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
+                        <Accordion className="rounded-md py-2 bg-[#234982] border-b-2 border-b-white">
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon className="text-white"/>}
                                 aria-controls="panel2-content"
@@ -55,7 +55,7 @@ const Faq = () => {
                                 more.
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
+                        <Accordion className="rounded-md py-2 bg-[#234982] border-b-2 border-b-white">
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon className="text-white"/>}
                                 aria-controls="panel2-content"
@@ -71,7 +71,7 @@ const Faq = () => {
                                 unique processes.
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
+                        <Accordion className="rounded-md py-2 bg-[#234982] border-b-2 border-b-white">
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon className="text-white"/>}
                                 aria-controls="panel2-content"
@@ -87,7 +87,7 @@ const Faq = () => {
                                 compliance.
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
+                        <Accordion className="rounded-md py-2 bg-[#234982] border-b-2 border-b-white">
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon className="text-white"/>}
                                 aria-controls="panel2-content"
