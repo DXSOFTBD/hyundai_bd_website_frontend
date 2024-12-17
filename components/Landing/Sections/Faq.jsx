@@ -1,7 +1,8 @@
-import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material"
+"use client"
+import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Image from "next/image";
-import faq from "@/public/Banner/faq.jpg"
+import faq from "@/public/Banner/faq.jpg";
 import { FaHeadphones } from "react-icons/fa";
 
 const Faq = () => {
@@ -22,12 +23,11 @@ const Faq = () => {
                     </div>
                     <div className="space-y-4">
                         <h2 className="text-white text-4xl font-bold">Do you have questions?</h2>
-                        <Accordion className="rounded-md py-2 bg-[#234982] border-b-2 border-b-white">
+                        <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon className="text-white"/>}
+                                expandIcon={<ExpandMoreIcon className="text-white" />}
                                 aria-controls="panel1-content"
                                 id="panel1-header"
-                            //   sx={{font:}}
                             >
                                 <p className="text-[16px] font-medium text-white">
                                     What does NUMATRIX Limited do?
@@ -39,9 +39,9 @@ const Faq = () => {
                                 your business growth.
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion className="rounded-md py-2 bg-[#234982] border-b-2 border-b-white">
+                        <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon className="text-white"/>}
+                                expandIcon={<ExpandMoreIcon className="text-white" />}
                                 aria-controls="panel2-content"
                                 id="panel2-header"
                             >
@@ -55,9 +55,9 @@ const Faq = () => {
                                 more.
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion className="rounded-md py-2 bg-[#234982] border-b-2 border-b-white">
+                        <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon className="text-white"/>}
+                                expandIcon={<ExpandMoreIcon className="text-white" />}
                                 aria-controls="panel2-content"
                                 id="panel2-header"
                             >
@@ -71,9 +71,9 @@ const Faq = () => {
                                 unique processes.
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion className="rounded-md py-2 bg-[#234982] border-b-2 border-b-white">
+                        <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon className="text-white"/>}
+                                expandIcon={<ExpandMoreIcon className="text-white" />}
                                 aria-controls="panel2-content"
                                 id="panel2-header"
                             >
@@ -87,9 +87,9 @@ const Faq = () => {
                                 compliance.
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion className="rounded-md py-2 bg-[#234982] border-b-2 border-b-white">
+                        <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon className="text-white"/>}
+                                expandIcon={<ExpandMoreIcon className="text-white" />}
                                 aria-controls="panel2-content"
                                 id="panel2-header"
                             >
@@ -102,12 +102,12 @@ const Faq = () => {
                                 improve communication and collaboration, boost operational
                                 efficiency, and make data-driven decisions.
                             </AccordionDetails>
-                        </Accordion>        
+                        </Accordion>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Faq
+export default Faq;

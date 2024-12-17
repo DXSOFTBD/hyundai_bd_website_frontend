@@ -236,7 +236,7 @@ const BestSellingProducts = () => {
                 }}
             >
                 <div className="grid grid-cols-1 md:grid-cols-2 py-10">
-                    <div className="flex flex-col items-center justify-center text-white text-5xl text-center">
+                    <div className="flex flex-col items-center justify-center text-white text-5xl text-center py-6">
                         <h2>
                             Stay cool, breathe easy, energy-efficient comfort all year round.
                         </h2>
