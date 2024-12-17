@@ -12,6 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import logo from "../../public/Logo/logo.png";
 
 // import Logo from "@/public/logo/Logo.png";
 
@@ -52,9 +53,9 @@ const LandingMobileDrawer = () => {
       >
         <div className="w-80 p-5 bg-[#222121] h-full">
           <div className="flex justify-between items-center pb-2 border-b">
-            {/* <Image className="w-20" src={Logo} alt="" priority /> */}
+            <Image className="w-20" src={logo} alt="" priority />
 
-            logo
+
 
             <CloseIcon
               className="cursor-pointer text-white"
@@ -102,7 +103,7 @@ export const MenuData = ({ setOpen }) => {
   return (
     <div>
       <ul className="mt-4">
-       
+
 
         {/* Close drawer on other sections as well */}
         <li className="py-4 shadow-md shadow-white pl-4">

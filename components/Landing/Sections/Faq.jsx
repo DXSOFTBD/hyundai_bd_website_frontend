@@ -25,15 +25,15 @@ const Faq = () => {
                         <h2 className="text-white text-4xl font-bold">Do you have questions?</h2>
                         <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon className="text-white" />}
+                                expandIcon={<ExpandMoreIcon className="text-black" />}
                                 aria-controls="panel1-content"
                                 id="panel1-header"
                             >
-                                <p className="text-[16px] font-medium text-white">
+                                <p className="text-[16px] font-medium text-black">
                                     What does NUMATRIX Limited do?
                                 </p>
                             </AccordionSummary>
-                            <AccordionDetails className="text-white">
+                            <AccordionDetails className="text-black">
                                 We create tailored HRMS and ERP software solutions that
                                 streamline your processes, unlock valuable insights, and drive
                                 your business growth.
@@ -41,15 +41,15 @@ const Faq = () => {
                         </Accordion>
                         <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon className="text-white" />}
+                                expandIcon={<ExpandMoreIcon className="text-black" />}
                                 aria-controls="panel2-content"
                                 id="panel2-header"
                             >
-                                <p className="text-[16px] font-medium text-white">
+                                <p className="text-[16px] font-medium text-black">
                                     What areas do your HRMS and ERP solutions cover?
                                 </p>
                             </AccordionSummary>
-                            <AccordionDetails className="text-white">
+                            <AccordionDetails className="text-black">
                                 We offer solutions for payroll management, employee
                                 engagement, recruitment, finance, inventory, supply chain, and
                                 more.
@@ -57,15 +57,15 @@ const Faq = () => {
                         </Accordion>
                         <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon className="text-white" />}
+                                expandIcon={<ExpandMoreIcon className="text-black" />}
                                 aria-controls="panel2-content"
                                 id="panel2-header"
                             >
-                                <p className="text-[16px] font-medium text-white">
+                                <p className="text-[16px] font-medium text-black">
                                     Can you customize your solutions to my specific needs?
                                 </p>
                             </AccordionSummary>
-                            <AccordionDetails className="text-white">
+                            <AccordionDetails className="text-black">
                                 Absolutely! We believe in building software that perfectly
                                 complements your existing infrastructure and optimizes your
                                 unique processes.
@@ -73,15 +73,15 @@ const Faq = () => {
                         </Accordion>
                         <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon className="text-white" />}
+                                expandIcon={<ExpandMoreIcon className="text-black" />}
                                 aria-controls="panel2-content"
                                 id="panel2-header"
                             >
-                                <p className="text-[16px] font-medium text-white">
+                                <p className="text-[16px] font-medium text-black">
                                     What benefits can I expect from implementing an HRMS system?
                                 </p>
                             </AccordionSummary>
-                            <AccordionDetails className="text-white">
+                            <AccordionDetails className="text-black">
                                 Improve efficiency, reduce administrative tasks, enhance
                                 employee experience, gain data-driven insights, and increase
                                 compliance.
@@ -89,15 +89,15 @@ const Faq = () => {
                         </Accordion>
                         <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon className="text-white" />}
+                                expandIcon={<ExpandMoreIcon className="text-black" />}
                                 aria-controls="panel2-content"
                                 id="panel2-header"
                             >
-                                <p className="text-[16px] font-medium text-white">
+                                <p className="text-[16px] font-medium text-black">
                                     What are the advantages of implementing an ERP system?
                                 </p>
                             </AccordionSummary>
-                            <AccordionDetails className="text-white">
+                            <AccordionDetails className="text-black">
                                 Gain control over your finances, inventory, and supply chain,
                                 improve communication and collaboration, boost operational
                                 efficiency, and make data-driven decisions.

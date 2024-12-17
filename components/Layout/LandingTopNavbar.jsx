@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
-// import logo from "../../public/logo/Logo.png";
+import logo from "../../public/Logo/logo.png";
 import Image from "next/image";
 import MobileDrawer from "@/components/Layout/LandingMobileDrawer";
 
@@ -66,8 +66,8 @@ const LandingTopNavbar = () => {
             <div className="lg:hidden flex pt-2 pb-1 justify-between items-center w-full">
               <div className="pl-4 ">
                 <Link href="/">
-                  {/* <Image className="w-full h-[60px]" src={logo} alt="Logo" /> */}
-                  logos
+                  <Image className="w-full h-[60px]" src={logo} alt="Logo" />
+                  
                 </Link>
               </div>
               <div className="text-3xl">
@@ -83,8 +83,8 @@ const LandingTopNavbar = () => {
               >
                 <div className="h-[100px] w-[120px] flex items-center text-white">
                   <Link href="/">
-                    {/* <Image className="" src={logo} alt="Logo" /> */}
-                    Logo
+                    <Image className="" src={logo} alt="Logo" />
+                   
                   </Link>
                 </div>
 
