@@ -58,7 +58,7 @@ const LandingTopNavbar = () => {
   return (
     <>
       <nav
-        className={`sticky md:fixed top-0 z-10 w-full ${isScrolled ? "shadow-lg bg-[#32498F]" : "bg-[#32498F]"
+        className={`sticky md:fixed top-0 z-20 w-full ${isScrolled ? "shadow-lg bg-[#32498F]" : "bg-[#32498F]"
           }`}
       >
         <div className="container mx-auto">

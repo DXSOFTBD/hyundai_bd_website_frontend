@@ -2,6 +2,15 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaArrowRight, FaStar, FaShoppingCart } from 'react-icons/fa';
+import { FiPhoneCall } from "react-icons/fi";
+import product1 from "@/public/Products/product-1.png"
+import product2 from "@/public/Products/product-2.png"
+import product3 from "@/public/Products/product-3.png"
+import product4 from "@/public/Products/product-4.png"
+import product5 from "@/public/Products/product-5.png"
+import product6 from "@/public/Products/product-6.png"
+import staycool from "@/public/Products/13-1.jpg"
+import sky from "@/public/Banner/sky.jpg"
 
 const BestSellingProducts = () => {
     const products = [
@@ -9,7 +18,7 @@ const BestSellingProducts = () => {
             id: 1,
             name: "Split Air Conditioner",
             description: "Advanced cooling system with smart temperature control",
-            image: "/products/product-1.png",
+            image: product1,
             price: "$750.00",
             oldPrice: "$850.00",
             rating: 5,
@@ -20,7 +29,7 @@ const BestSellingProducts = () => {
             id: 2,
             name: "Cassette Air Conditioner",
             description: "Whisper-quiet operation with powerful cooling",
-            image: "/products/product-2.png",
+            image: product2,
             price: "$950.00",
             oldPrice: "$1050.00",
             rating: 4.8,
@@ -31,7 +40,7 @@ const BestSellingProducts = () => {
             id: 3,
             name: "Window Air Conditioner",
             description: "Compact and efficient cooling solution",
-            image: "/products/product-3.png",
+            image: product3,
             price: "$550.00",
             oldPrice: "$650.00",
             rating: 4.9,
@@ -42,7 +51,7 @@ const BestSellingProducts = () => {
             id: 4,
             name: "Window Air Conditioner",
             description: "Compact and efficient cooling solution",
-            image: "/products/product-4.png",
+            image: product4,
             price: "$550.00",
             oldPrice: "$650.00",
             rating: 4.9,
@@ -53,7 +62,7 @@ const BestSellingProducts = () => {
             id: 5,
             name: "Window Air Conditioner",
             description: "Compact and efficient cooling solution",
-            image: "/products/product-5.png",
+            image: product5,
             price: "$550.00",
             oldPrice: "$650.00",
             rating: 4.9,
@@ -64,7 +73,7 @@ const BestSellingProducts = () => {
             id: 6,
             name: "Window Air Conditioner",
             description: "Compact and efficient cooling solution",
-            image: "/products/product-6.png",
+            image: product6,
             price: "$550.00",
             oldPrice: "$650.00",
             rating: 4.9,
@@ -74,83 +83,84 @@ const BestSellingProducts = () => {
     ];
 
     return (
-        <section className="py-24 bg-[#234982]">
-            <div className="container mx-auto px-4">
-                {/* Section Header */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-center mb-16"
-                >
-                    {/* <span className="text-blue-600 font-medium mb-4 block">
+        <>
+            <section className="pt-24 pb-52 bg-[#234982]">
+                <div className="container mx-auto px-4">
+                    {/* Section Header */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="text-center mb-16"
+                    >
+                        {/* <span className="text-blue-600 font-medium mb-4 block">
                         Our Products
                     </span> */}
-                    <h2 className="text-4xl font-bold mb-4 text-white">
-                        Best Selling Products
-                    </h2>
-                    <div className="w-24 h-1 bg-white mx-auto"></div>
-                </motion.div>
+                        <h2 className="text-4xl font-bold mb-4 text-white">
+                            Best Selling Products
+                        </h2>
+                        <div className="w-24 h-1 bg-white mx-auto"></div>
+                    </motion.div>
 
-                {/* Products Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                    {products.map((product, index) => (
-                        <motion.div
-                            key={product.id}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.2 }}
-                            className="rounded-lg overflow-hidden group"
-                        >
-                            {/* Product Image Container */}
-                            <div className="relative h-96 bg-[#1C3A68] p-10  overflow-hidden">
-                                {/* Sale Tag */}
-                                <div className="absolute top-6 left-6 z-10">
-                                    <span className="bg-blue-600 text-white text-sm px-4 py-2 rounded-full">
-                                        {product.tag}
-                                    </span>
-                                </div>
+                    {/* Products Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                        {products.map((product, index) => (
+                            <motion.div
+                                key={product.id}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.2 }}
+                                className="rounded-lg overflow-hidden group"
+                            >
+                                {/* Product Image Container */}
+                                <div className="relative h-96 bg-[#1C3A68] p-10  overflow-hidden">
+                                    {/* Sale Tag */}
+                                    <div className="absolute top-6 left-6 z-10">
+                                        <span className="bg-blue-600 text-white text-sm px-4 py-2 rounded-full">
+                                            {product.tag}
+                                        </span>
+                                    </div>
 
-                                {/* Product Image */}
-                                <motion.div
-                                    className="relative h-full w-full p-10"
-                                    whileHover={{ scale: 1.05 }}
-                                    transition={{ duration: 0.3 }}
-                                >
-                                    <Image
-                                        src={product.image}
-                                        alt={product.name}
-                                        fill
-                                        className="object-contain"
-                                    />
-                                </motion.div>
-
-                                <div className="absolute bottom-4 right-6 z-10">
-                                    <span className="text-white text-lg px-4 py-2 font-semibold">
-                                        {product.name}
-                                    </span>
-
-                                </div>
-
-                                {/* Quick View Overlay */}
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    whileHover={{ opacity: 1 }}
-                                    className="absolute inset-0 bg-black/20 flex items-center justify-center"
-                                >
-                                    <motion.button
-                                        whileHover={{ scale: 1.1 }}
-                                        whileTap={{ scale: 0.9 }}
-                                        className="bg-white text-blue-600 px-6 py-3 rounded-full font-medium"
+                                    {/* Product Image */}
+                                    <motion.div
+                                        className="relative h-full w-full p-10"
+                                        whileHover={{ scale: 1.05 }}
+                                        transition={{ duration: 0.3 }}
                                     >
-                                        Quick View
-                                    </motion.button>
-                                </motion.div>
-                            </div>
+                                        <Image
+                                            src={product.image}
+                                            alt={product.name}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </motion.div>
 
-                            {/* Product Info */}
-                            {/* <div className="p-8">
+                                    <div className="absolute bottom-4 right-6 z-10">
+                                        <span className="text-white text-lg px-4 py-2 font-semibold">
+                                            {product.name}
+                                        </span>
+
+                                    </div>
+
+                                    {/* Quick View Overlay */}
+                                    <motion.div
+                                        initial={{ opacity: 0 }}
+                                        whileHover={{ opacity: 1 }}
+                                        className="absolute inset-0 bg-black/20 flex items-center justify-center"
+                                    >
+                                        <motion.button
+                                            whileHover={{ scale: 1.1 }}
+                                            whileTap={{ scale: 0.9 }}
+                                            className="bg-white text-blue-600 px-6 py-3 rounded-full font-medium"
+                                        >
+                                            Quick View
+                                        </motion.button>
+                                    </motion.div>
+                                </div>
+
+                                {/* Product Info */}
+                                {/* <div className="p-8">
                                 
                                 <div className="flex items-center gap-2 mb-3">
                                     <div className="flex text-yellow-400">
@@ -196,28 +206,57 @@ const BestSellingProducts = () => {
                                     </motion.button>
                                 </div>
                             </div> */}
-                        </motion.div>
-                    ))}
-                </div>
+                            </motion.div>
+                        ))}
+                    </div>
 
-                {/* View All Button */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    className="text-center mt-12"
-                >
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-full font-medium hover:bg-blue-700 transition-colors"
+                    {/* View All Button */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        className="text-center mt-12"
                     >
-                        View All Products
-                        <FaArrowRight />
-                    </motion.button>
-                </motion.div>
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-full font-medium hover:bg-blue-700 transition-colors"
+                        >
+                            View All Products
+                            <FaArrowRight />
+                        </motion.button>
+                    </motion.div>
+                </div>
+            </section>
+            <div
+                className="container mx-auto bg-cover bg-center bg-no-repeat max-w-7xl px-16 -mt-20 rounded-xl"
+                style={{
+                    backgroundImage: `url(${sky.src})`,
+                    backgroundAttachment: "fixed",
+                }}
+            >
+                <div className="grid grid-cols-1 md:grid-cols-2 py-10">
+                    <div className="flex flex-col items-center justify-center text-white text-5xl text-center">
+                        <h2>
+                            Stay cool, breathe easy, energy-efficient comfort all year round.
+                        </h2>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <Image className="rounded-md" src={staycool} alt="Stay Cool" />
+                        </div>
+                        <div className="bg-[#234982] text-center flex flex-col items-center justify-center text-white space-y-2 rounded-md py-10">
+                            <p className="text-7xl">
+                                <FiPhoneCall />
+                            </p>
+                            <p className="text-2xl">24 Hours</p>
+                            <p className="text-2xl">+929 333 9296</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+
+        </>
     );
 };
 
