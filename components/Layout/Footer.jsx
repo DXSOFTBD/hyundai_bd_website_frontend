@@ -72,7 +72,7 @@ const Footer = () => {
             <div className="border-t-2"></div>
 
             <div className="py-10 text-white">
-                <div className="container mx-auto flex justify-around">
+                <div className="container mx-auto flex flex-col lg:flex-row justify-around">
                     <p>
                         © Copyright Hyundai Bangladesh. All Rights Reserved
                     </p>
