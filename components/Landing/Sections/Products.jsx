@@ -84,7 +84,7 @@ const BestSellingProducts = () => {
 
     return (
         <>
-            <section className="pt-24 pb-52 bg-[#234982]">
+            <section className="pt-24 pb-52 bg-[#234982] rounded-tl-[300px]">
                 <div className="container mx-auto px-4">
                     {/* Section Header */}
                     <motion.div

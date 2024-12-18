@@ -111,7 +111,7 @@ const LandingTopNavbar = () => {
                       className={
                         router.asPath === "/"
                           ? "text-[16px] font-medium text-red-600"
-                          : "text-[16px] font-medium text-white px-8 py-4"
+                          : "text-[16px] font-semibold text-white px-12 py-4  rounded-2xl shadow-md shadow-white"
                       }
                     >
                       <NevagationLink url="/home" text="Home" />
@@ -121,7 +121,7 @@ const LandingTopNavbar = () => {
                       className={
                         router.asPath === "/product"
                           ? "text-[16px] font-medium text-red-600"
-                          : "text-[16px] font-medium text-white px-8 py-4"
+                          : "text-[16px] font-semibold text-white px-8 py-4  rounded-2xl shadow-md shadow-white"
                       }
                     >
                       <NevagationLink url="/product" text="Products" />
@@ -130,7 +130,7 @@ const LandingTopNavbar = () => {
                       className={
                         router.asPath === "/about"
                           ? "text-[16px] font-medium text-red-600"
-                          : "text-[16px] font-medium text-white px-8 py-4"
+                          : "text-[16px] font-semibold text-white px-8 py-4  rounded-2xl shadow-md shadow-white"
                       }
                     >
                       <NevagationLink url="/about" text="About Us" />
@@ -152,7 +152,7 @@ const LandingTopNavbar = () => {
                       className={
                         router.asPath === "/contact"
                           ? "text-[16px] font-medium text-red-600"
-                          : "text-[16px] font-medium text-white px-8 py-4"
+                          : "text-[16px] font-semibold text-white px-8 py-4  rounded-2xl shadow-md shadow-white"
 
                       }
                     >

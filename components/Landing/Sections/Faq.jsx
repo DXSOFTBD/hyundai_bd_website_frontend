@@ -7,7 +7,7 @@ import { FaHeadphones } from "react-icons/fa";
 
 const Faq = () => {
     return (
-        <div className="py-16 bg-[#234982]">
+        <div className="py-16 bg-[#234982] rounded-tr-[400px] ] rounded-br-[400px]">
             <div className="mx-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10 md:py-20 container mx-auto">
                     <div className="flex items-center justify-center relative">
@@ -30,13 +30,11 @@ const Faq = () => {
                                 id="panel1-header"
                             >
                                 <p className="text-[16px] font-medium text-black">
-                                    What does NUMATRIX Limited do?
+                                    When should I schedule maintenance?
                                 </p>
                             </AccordionSummary>
                             <AccordionDetails className="text-black">
-                                We create tailored HRMS and ERP software solutions that
-                                streamline your processes, unlock valuable insights, and drive
-                                your business growth.
+                                It's recommended to schedule HVAC maintenance at least once a year, ideally before the start of the heating or cooling season. Regular maintenance helps improve efficiency, prevent breakdowns, and prolong the lifespan of your system.
                             </AccordionDetails>
                         </Accordion>
                         <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
@@ -46,13 +44,11 @@ const Faq = () => {
                                 id="panel2-header"
                             >
                                 <p className="text-[16px] font-medium text-black">
-                                    What areas do your HRMS and ERP solutions cover?
+                                    How often should I replace HVAC filters?
                                 </p>
                             </AccordionSummary>
                             <AccordionDetails className="text-black">
-                                We offer solutions for payroll management, employee
-                                engagement, recruitment, finance, inventory, supply chain, and
-                                more.
+                                HVAC filters should typically be replaced every 1 to 3 months, depending on factors such as filter type, indoor air quality, and usage. Clogged or dirty filters can restrict airflow and reduce system efficiency.
                             </AccordionDetails>
                         </Accordion>
                         <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
@@ -62,13 +58,11 @@ const Faq = () => {
                                 id="panel2-header"
                             >
                                 <p className="text-[16px] font-medium text-black">
-                                    Can you customize your solutions to my specific needs?
+                                    Do you use genuine parts for repairs?
                                 </p>
                             </AccordionSummary>
                             <AccordionDetails className="text-black">
-                                Absolutely! We believe in building software that perfectly
-                                complements your existing infrastructure and optimizes your
-                                unique processes.
+                                Yes, we use only high-quality, genuine parts to ensure the best performance and longevity of your device after the repair.
                             </AccordionDetails>
                         </Accordion>
                         <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
@@ -78,13 +72,11 @@ const Faq = () => {
                                 id="panel2-header"
                             >
                                 <p className="text-[16px] font-medium text-black">
-                                    What benefits can I expect from implementing an HRMS system?
+                                    Is there a warranty on your repairs?
                                 </p>
                             </AccordionSummary>
                             <AccordionDetails className="text-black">
-                                Improve efficiency, reduce administrative tasks, enhance
-                                employee experience, gain data-driven insights, and increase
-                                compliance.
+                                Absolutely. All our repairs come with a warranty to give you peace of mind. The specific warranty duration may vary depending on the type of repair and the device.
                             </AccordionDetails>
                         </Accordion>
                         <Accordion className="rounded-md py-2 bg-transparent border-b-2 border-b-white">
@@ -94,13 +86,11 @@ const Faq = () => {
                                 id="panel2-header"
                             >
                                 <p className="text-[16px] font-medium text-black">
-                                    What are the advantages of implementing an ERP system?
+                                    How do I get a quote for my repair?
                                 </p>
                             </AccordionSummary>
                             <AccordionDetails className="text-black">
-                                Gain control over your finances, inventory, and supply chain,
-                                improve communication and collaboration, boost operational
-                                efficiency, and make data-driven decisions.
+                                You can get a quote by visiting our website or contacting our customer service. We provide transparent pricing with no hidden fees.
                             </AccordionDetails>
                         </Accordion>
                     </div>
